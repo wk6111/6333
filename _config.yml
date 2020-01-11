@@ -1,7 +1,2 @@
-remote_theme: pmarsceill/just-the-docs
-title: 王可
-description: 随时为此添加书签，以随时关注我的项目更新
-
-
-# 页脚内容显示在每个页面主要内容的底部
-footer_content: "6111"
+theme:
+  name: 'material'
