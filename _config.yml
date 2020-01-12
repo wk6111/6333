@@ -1,5 +1,3 @@
 deploy:
 - type: git
-  repo:
-- type: heroku
-  repo:
+  repo: https://github.com/wk6111/6333.git
