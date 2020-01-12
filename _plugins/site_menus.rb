@@ -1,16 +1,4 @@
-# encoding: utf-8
-#
-# Jekyll site menus.
-# https://github.com/MrWerewolf/jekyll-site-menus
-#
-# Copyright (c) 2012 Ryan Seto <mr.werewolf@gmail.com>
-# Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
-#
-# Place this script into the _plugins directory of your Jekyll site.
-#
-require 'uri'
 
-module Jekyll
   class SiteMenus < Liquid::Tag
     def initialize(tag_name, menu_name, tokens)
       super
