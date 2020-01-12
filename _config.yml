@@ -1,8 +1,36 @@
+# You can use this:
+deploy:
+  type: git
+  repo: <repository url>
+  branch: [branch]
+  token: ''
+  message: [message]
+  name: [git user]
+  email: [git email]
+  extend_dirs: [extend directory]
+  ignore_hidden: false # default is true
+  ignore_pattern: regexp  # whatever file that matches the regexp will be ignored when deploying
 
-remote_theme: pmarsceill/just-the-docs
-title: 王可
-description: 随时为此添加书签，以随时关注我的项目更新
+# or this:
+deploy:
+  type: git
+  message: [message]
+  repo: <repository url>[,branch]
+  extend_dirs:
+    - [extend directory]
+    - [another extend directory]
+  ignore_hidden:
+    public: false
+    [extend directory]: true
+    [another extend directory]: false
+  ignore_pattern:
+    [folder]: regexp  # or you could specify the ignore_pattern under a certain directory
 
-
-# 页脚内容显示在每个页面主要内容的底部
-footer_content: "6111"
+# Multiple repositories
+deploy:
+  repo:
+    # Either syntax is supported
+    [repo_name]: <repository url>[,branch]
+    [repo_name]:
+      url: <repository url>
+      branch: [branch]
